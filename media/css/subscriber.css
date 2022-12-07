@@ -1,0 +1,86 @@
+.subwrapper{
+    margin: 40px;
+    margin-left: 35%;
+    margin-right: 35%;
+    background-color:bisque;
+    padding: 40px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#title{
+    margin: 0 0 30px 20px;
+    font-size: 40px;
+}
+
+#name, #email, #number{
+    margin: 0 0 20px 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+#lname, #lemail, #lnumber{
+    font-size: 20px;
+}
+
+#name{
+    margin-left: 26px ;
+}
+
+#email{
+    margin-left: 28px;
+}
+
+#submitbtn{
+    width: 70%;
+    margin-left: 8%;
+    margin-top: 20px;
+    padding: 5px;
+    font-size: 18px;
+    background-color:deepskyblue;
+    border-radius: 10px;
+    border: none;
+    color: aliceblue;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1400px){
+    .subwrapper{
+        margin: 5% 20% 0 20%;
+    }
+
+    #name, #email, #number{
+        margin: 0 0 30px 20px;
+    }
+
+    #name{
+        margin-left: 35px ;
+    }
+    
+    #email{
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .subwrapper{
+        margin: 5% 5% 0 5%;
+    }
+
+    #name, #email, #number{
+        margin: 0 0 10px 0px;
+        width: 95%;
+    }
+
+}
+
+@media screen and (max-width: 320px){
+    .subwrapper{
+        margin: 2% 2% 0 2%;
+    }
+
+    #name, #email, #number{
+        margin: 0 0 10px 0px;
+    }
+}

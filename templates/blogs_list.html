@@ -1,0 +1,45 @@
+{% extends 'main.html' %}
+{% block content %}
+
+{% for data in all_blogs %}
+    <div class='card-wrapper'>
+    
+        <div class="blog-img-card">
+            <img src="/media/{{data.picture}}"  alt="" class="default-img">
+        </div>
+        <div class="blog-body-card">
+            <h3 class="blog-card-title"><a href="/blogs/{{data.id}}/">{{data.Title}}</a></h3>
+            <p class="blog-card-body-mobile" id="less-text">{{data.description | truncatechars:50}}</p>
+            <p class="blog-card-body" id="more-text">{{data.description | truncatewords:120}}</p>
+            <button onclick="myFunction()" class="readmore" id="myBtn">Read More</button>
+            <h5 class="blog-card-date">{{data.uploaded_date}}</h5>
+
+        </div>
+        <div class="blog-auther-card">{{data.Author}}</div>
+        
+    </div>
+
+    <script>
+        function myFunction(){
+            var less = document.getElementById("less-text");
+            var more = document.getElementById("more-text");
+            var btn = document.getElementById("myBtn");
+
+            if (less.style.display == "none"){
+                less.style.display = "inline";
+                btn.innerHTML = "View More";
+                more.style.display = "none";
+            }
+            else{
+                less.style.display = "none";
+                btn.innerHTML = "View less";
+                more.style.display = "inline";
+            }
+        }
+    </script>
+    
+        
+    {% endfor %}
+    
+{% endblock content %}
+

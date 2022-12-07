@@ -1,0 +1,21 @@
+<div class='container-fluid footer'>
+    <div class='row'>
+        <div class='col-4 footer-column' >
+            <span class='footer-text'>Contact Us:</span><br/>
+            <span><a href="{% url 'subscriber_page' %}" class='footer-text'> Subscribe to this Blog </a></span><br/>
+            <span class='footer-text'> Want your blogs to be featured here ?</span><br/>
+            <span class='footer-text'> Mail us at here:</span><br/>
+            <a href='mailto: ghoshswakshwar@gmail.com' class='footer-text'>Send Email here</a> 
+        </div>
+        <div class='col-4 footer-column'>
+            <span class='footer-text'>All Rights reserved to hingtingchhat.in &#169; </span>
+        </div>
+        <div class='col-4 footer-column'>
+            <a href="{% url 'home' %}" class='footer-text' >Home</a><br/>
+            <a href="{% url 'blogs_list' %}" class='footer-text'>Blogs</a><br/>
+            <a href="{% url 'guest_blog_list' %}" class='footer-text'>Guest Blogs</a><br/>
+            <a href="{% url 'about_me' %}" class='footer-text'>About Me</a><br/>
+            <a href="{% url 'about_blog' %}" class='footer-text'>About My blogs</a>
+        </div>
+    </div>
+</div>

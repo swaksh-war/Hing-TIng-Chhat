@@ -1,0 +1,26 @@
+{% extends "main.html" %}
+{% block content %}
+
+<div class="subwrapper">
+    <h3 id="title">Subscriber</h3>
+    <form  method = "POST">
+        {% csrf_token %}
+
+        <label for="" id="lname">Name</label>
+        <input type="text" id="name" name="fname" placeholder="Enter your Name" Required>
+        <br>
+
+        <label for="" id="lemail">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email id" Required>
+        <br>
+
+        <label for="" id="lnumber">Number</label>
+        <input type="text" id="number" name="number" placeholder="Enter your phone number" required>
+        <br>
+
+        <input type="submit" value="Submit" id="submitbtn">
+        
+    </form>
+</div>
+
+{% endblock content %}

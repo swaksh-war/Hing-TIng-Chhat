@@ -1,0 +1,31 @@
+.title{
+  font-size: 45px;
+  margin: 20px;
+  margin-left: 40%;
+  font-weight: 600;
+}
+
+.blog-image{
+  width: 400px;
+  border-radius: 20px;
+  margin: 20px;
+  margin-left: 38%;
+}
+
+.desc{
+  margin: 0 15%;
+  font-size: 24px;
+  background-color: antiquewhite;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.auther{
+  margin-left: 75%;
+  font-size: 25px;
+}
+
+.date{
+  margin-left: 15%;
+  font-size: 20px;
+}

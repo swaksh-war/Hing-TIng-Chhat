@@ -1,0 +1,11 @@
+{% extends "main.html" %}
+{% block content %}
+
+<h4 class="title"> {{blog.Title}} </h4>
+<img src="/media/{{blog.picture}}" class="blog-image" />
+<p class="desc">{{blog.description}}</p>
+<span class="auther">{{blog.Author}}</span>
+<span class="date">{{blog.uploaded_date}}</span>
+
+{% endblock content %}
+

@@ -1,0 +1,90 @@
+/* Navbar Custom css Here */
+a{
+    text-decoration: none;
+}
+.cover-photo {
+    height: 70vh;
+    width: 100vw;
+}
+
+.custom-navbar{
+    position: fixed;
+    width: 100vw;
+}
+/* Navbar Custom Css ends */
+
+/* home page CSS Here */
+.auth_image {
+    height: 25vh;
+    width:15vw;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: auto;
+    margin-top: 5%;
+}
+
+
+.about-me-cont{
+    width: 70vw;
+    margin: auto;
+    margin-top: 4%;
+}
+
+.about-me-text {
+    font-size: 1.5rem;
+}
+
+.about-me-head{
+    text-align: center;
+}
+
+/* Home page CSS ends here */
+
+/* Footer Css */
+.footer-column {
+    height: 20vh;
+    background-color: rgb(235, 186, 52);
+    border-right: 1px black solid;
+}
+
+.rights{
+    text-align: center;
+}
+/* Footer Css ends */
+
+/* Blog card css */
+.card-wrapper{
+    width: 85vw;
+    margin: auto;
+    margin-top: 5%;
+    border: 2px black solid;
+    border-radius: 10px;
+}
+
+.card-bottom {
+    display: flex;
+}
+
+.blog-card-date{
+    flex:1;
+}
+
+.blog-card-author{
+    flex: 2;
+}
+/* Blog card CSS ends */
+
+@media only screen and (orientation: portrait) {
+    /* In */
+    .cover-photo{
+        height: 40vh;
+    }
+
+    .auth_image {
+        height: 22vh;
+        width: 30vw;
+    }
+    .footer-text{
+        font-size: 0.7rem;
+    }
+}
